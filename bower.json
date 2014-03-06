@@ -6,7 +6,7 @@
   "authors": [
     "Aniket Dharia <aniket.dharia@credipoint.com>"
   ],
-  "description": "Click and Learn Teamplate developed by CrediPoint Solutions for Adapt Framework.",
+  "description": "Click and Learn Template developed by CrediPoint Solutions for Adapt Framework.",
   "main": "/js/adapt-clickandlearn.js",
   "keywords": [
     "adapt-component"
