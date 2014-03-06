@@ -1,0 +1,113 @@
+.clickAndLearn-container{
+}
+.clickAndLearn-wrapper{
+  width:100%;
+  height:150px;
+  float:left;
+}
+.clickAndLearn-navContainer{
+/*  width:100%;
+  height:30px;*/
+  position: relative;
+}
+.clickAndLearn-indicator{
+  display:inline-block;
+/*  width:100px;
+  height:23px;*/
+  position:relative;
+  margin-top:2.5px;
+/*  border:1px solid #000000;*/
+  background-color: #3eb4e4;
+  cursor:pointer;
+  z-index:15;
+}
+.clickAndLearn-tabItem:after{
+  margin-left:3px;
+}
+.clickAndLearn-indicatorActive{
+  background-color: #1b87b2;
+}
+
+.clickAndLearn-tabViewContainer{
+  width:100%;
+  height:120px;
+}
+.clickAndLearn-tabItem{
+  width:100%;
+  display:none;
+  position:relative;
+  background-color:#3eb4e4;
+  margin-top: 15px;
+  padding:10px;
+  color: #ffffff;
+
+}
+.clickAndLearn-tabView_title, .clickAndLearn-tabView_Content{
+  display:block;
+  margin-top:5px;
+  margin-left:5px;
+}
+.clickAndLearn-tabView_title{
+  font-size:20px;
+}
+.clickAndLearn-tabView_Content{
+  font-size:16px;
+}
+
+.clickAndLearn-popup {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  background-color: @inverted-background-color;
+  color: @inverted-foreground-color;
+  border:@border;
+}
+
+.clickAndLearn-popup-inner {
+  padding:@item-padding;
+}
+
+.clickAndLearn-popup-toolbar-title {
+  margin-bottom: 10px;
+  float: left;
+  width: 80%;
+}
+
+.clickAndLearn-popup-content {
+  overflow-y: auto;
+}
+
+.clickAndLearn-popup-open {
+  display: block;
+  position: absolute;
+  top:7px;
+  right:5px;
+  text-decoration: none;
+  z-index: 500;
+  .icon {
+    color: @inverted-foreground-color;
+    &:hover {
+      color: lighten(@inverted-background-color, 30%);
+    }
+  }
+}
+
+.clickAndLearn-popup-close {
+  display: inline-block;
+  float: right;
+  color: @primary-color;
+  .icon {
+    color:@inverted-foreground-color;
+    &:hover {
+      color:lighten(@inverted-background-color, 30%);
+    }
+  }
+}
+
+.clickAndLearn-hidden {
+  display:none;
+}

@@ -1,0 +1,56 @@
+<div id="clickAndLearnContainer" class="clickAndLearn-container">
+    {{#if title}}
+        <div class="component-title">
+            <h4 class="component-title-inner">{{title}}</h4>
+        </div>
+    {{/if}}
+    {{#if body}}
+        <div class="component-body">
+            <div class="component-body-inner">
+                {{{body}}}
+            </div>
+        </div>
+    {{/if}}
+    <div id="clickAndLearnWrapper" class="clickAndLearn-wrapper">
+        <div id="navContainer" class="clickAndLearn-navContainer">
+            {{#each items}}
+            <div id="tabItemIndicator-{{@index}}" class="clickAndLearn-indicator">
+                <img id="tabItemIndicatorImage-{{@index}}" src="{{imageSrc}}" class="clickAndLearn-indicator-img">
+            </div>
+            {{/each}}
+        </div>
+        <div id="tabViewContainer" class="clickAndLearn-tabViewContainer">
+            {{#each items}}
+            <div id="tabItem-{{@index}}" class="clickAndLearn-tabItem">
+                <div id="tabItem-{{@index}}_title" class="clickAndLearn-tabView_title">{{title}}</div>
+                <div id="tabItem-{{@index}}_content" class="clickAndLearn-tabView_Content">{{content}}</div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="clickAndLearn-popup clickAndLearn-hidden">
+            <div class="clickAndLearn-popup-inner">
+                <div class="clickAndLearn-popup-toolbar">
+                    <div class="clickAndLearn-popup-toolbar-inner clearfix">
+                        {{#each items}}
+                            <div id="clickAndLearn-popup-toolbar-title-{{@index}}" class="clickAndLearn-popup-toolbar-title">
+                                <h5 class="clickAndLearn-popup-toolbar-inner">
+                                    {{{title}}}
+                                </h5>
+                            </div>
+                        {{/each}}
+                        <a href="#" class="clickAndLearn-popup-close">
+                            <div class="icon icon-cross"></div>
+                        </a>
+                    </div>
+                </div>
+                {{#each items}}
+                    <div id="clickAndLearn-popup-content-{{@index}}" class="clickAndLearn-popup-content">
+                        <div class="clickAndLearn-popup-content-inner">
+                            {{{content}}}
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+{
+  "name": "adapt-clickAndLearn",
+  "version": "0.0.1",
+  "repository": "git://github.com/aniketdharia/adapt-clickandlearn.git",
+  "homepage": "https://github.com/aniketdharia/adapt-clickandlearn",
+  "authors": [
+    "Aniket Dharia <aniket.dharia@credipoint.com>"
+  ],
+  "description": "Click and Learn Teamplate developed by CrediPoint Solutions for Adapt Framework.",
+  "main": "/js/adapt-clickandlearn.js",
+  "keywords": [
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}
