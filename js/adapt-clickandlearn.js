@@ -46,7 +46,7 @@ define(function(require) {
             } else {
                 this.$el.find('.clickAndLearn-tabViewContainer').hide();
             }
-            this.$el.find('.clickAndLearn-tabItem:first').css('display', 'block');
+            this.$el.find('.clickAndLearn-tabItem:first').css('display', 'hidden');
             this.setReadyStatus();
         },
         /* handler function for click event on indicator element */
