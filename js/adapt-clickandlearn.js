@@ -48,7 +48,7 @@ define(function(require) {
             } else {
                 this.$el.find('div#tabViewContainer').hide();
             }
-            this.$el.find('div#tabItem-0').css('display', 'block');
+            this.$el.find('div#tabItem-0').css('display', 'hidden');
             this.setReadyStatus();
         },
         /* handler function for click event on indicator element */
